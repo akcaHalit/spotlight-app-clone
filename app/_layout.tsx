@@ -7,7 +7,10 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <SafeAreaView style={{flex:1}}>
 
-          <Stack>
+        {/* Style= değil screenOptions kullanılır Stack'de. */}
+        {/* Bu */}
+          <Stack screenOptions={{ headerShown: false}}>
+
             <Stack.Screen name="index" options={{title: "Anasayfa"}}  />
             <Stack.Screen name="notifications" 
             options={{
